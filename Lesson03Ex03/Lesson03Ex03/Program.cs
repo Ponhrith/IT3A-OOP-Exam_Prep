@@ -35,6 +35,7 @@ namespace Lesson03Ex03
         static void Main(string[] args)
         {
             Account accObj;
+
             Console.Write("Please enter the type: ");
             string Type = Console.ReadLine();
             Console.Write("Please enter your name: ");
@@ -43,8 +44,9 @@ namespace Lesson03Ex03
             float Balance = float.Parse(Console.ReadLine());
 
             accObj = new Account(Type, Name, Balance);
+            accObj.CalInterest();
 
-            Console.WriteLine("Balance = $20000, Interest = 36$ ");
+            Console.WriteLine("Balance = ${0} , Interest = ${1}", Balance, accObj.CalInterest());
         }
     }
 }
