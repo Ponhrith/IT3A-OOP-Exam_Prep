@@ -36,6 +36,7 @@ namespace Lesson07Example
         { 
             this.strStudentName=strStudentName;
             this.fltSchoolFees = fltSchoolFees;
+            //SchoolFees = fltSchoolFees;
         }
     }
     internal class Program
