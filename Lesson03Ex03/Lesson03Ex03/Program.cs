@@ -14,7 +14,8 @@ namespace Lesson03Ex03
 
         public float Balance
         { 
-            get { return fltBalance; } set { fltBalance = value; } 
+            get { return fltBalance; } 
+            set { fltBalance = value; } 
         }
 
         public Account (string PlsType, string GiveMeName, float ShowMeBalance)
