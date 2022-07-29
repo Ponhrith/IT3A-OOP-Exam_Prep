@@ -12,7 +12,7 @@ namespace Lesson03Ex2
 
         public float Area
         {
-            get { return fltRadius; }
+            get { return 3.1416f * fltRadius * fltRadius; }
             
         }
 
@@ -34,17 +34,19 @@ namespace Lesson03Ex2
         {
             Circle c1, c2;
             Console.WriteLine("Enter the radius of Circle 1: ");
-            float fltRadius = float.Parse(Console.ReadLine());
-            c1 = new Circle(fltRadius);
+            float Radius = float.Parse(Console.ReadLine());
+            c1 = new Circle(Radius);
 
             Console.WriteLine("Enter the radius of Circle 2: ");
-            fltRadius = float.Parse(Console.ReadLine());
-            c2 = new Circle(fltRadius);
-            //c1.Circumference();
-            //c2.Circumference();
+            Radius = float.Parse(Console.ReadLine());
+            c2 = new Circle(Radius);
 
-            Console.WriteLine("Total Area of the Circles = {0}", Circle.Area());
-            Console.WriteLine("Total Circumference of the Circles = {0}", Circle.Circumference());
+            
+
+            Console.WriteLine("Total Area of the Circles = ");
+            Console.WriteLine((c1.Area + c2.Area).ToString());
+            Console.WriteLine("Total Circumference of the Circles = ");
+            Console.WriteLine((c1.Circumference() + c2.Circumference()).ToString());
         }
     }
 }
