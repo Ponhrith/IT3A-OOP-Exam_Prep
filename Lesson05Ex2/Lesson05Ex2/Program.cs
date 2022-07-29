@@ -30,7 +30,7 @@ namespace Lesson05Ex2
             return strReturn;
         }
 
-        public float GetTime(string strType)
+        public string GetTime(string strType)
         {
             if (strType == "sec")
             {
@@ -39,6 +39,10 @@ namespace Lesson05Ex2
             else if (strType == "min")
             {
                 intMin = intHour * 60f + intMin + intSec / 60f;
+            }
+            else if (strType == "hour")
+            {
+                intHour = intHour + intMin / 60f + intSec / 3600f;
             }
         }
     }
