@@ -10,6 +10,11 @@ namespace Lesson08Example
     {
         private string strPetShopName;
         private string strAddress;
+        public string Address
+        {
+            get { return strAddress; }
+            set { strAddress = value; }
+        }
         public PetShop(string strPetShopName, string strAddress)
         {
             this.strPetShopName = strPetShopName;
@@ -30,6 +35,11 @@ namespace Lesson08Example
     class Dog : PetShop
     {
         private string strName;
+        public string Name
+        {
+            get { return strName; }
+            set { strName = value; }
+        }
         public Dog (string strPetShopName, string strAddress, string strName): base(strPetShopName, strAddress)
         {
             this.strName = strName;
@@ -64,7 +74,7 @@ namespace Lesson08Example
             string PetShopAddress = Console.ReadLine();
 
             Dog objDog = new Dog(ILovePet, PetShopAddress, MyBestPet);
-            Console.WriteLine("Pet Shop Name: {0}, Address: {1}", MyBestPet, PetShopAddress);
+            Console.WriteLine("Pet Shop Name: {0}, Address: {1}", objDog.Name, objDog.Address);
             Console.WriteLine("The animal makes a sound {0}", objDog.Sound());
 
         }
