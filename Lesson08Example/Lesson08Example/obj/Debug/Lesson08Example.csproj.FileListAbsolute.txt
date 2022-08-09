@@ -1,0 +1,8 @@
+D:\Coding Projects\IT3A-OOP-Exam_Prep\Lesson08Example\Lesson08Example\bin\Debug\Lesson08Example.exe.config
+D:\Coding Projects\IT3A-OOP-Exam_Prep\Lesson08Example\Lesson08Example\bin\Debug\Lesson08Example.exe
+D:\Coding Projects\IT3A-OOP-Exam_Prep\Lesson08Example\Lesson08Example\bin\Debug\Lesson08Example.pdb
+D:\Coding Projects\IT3A-OOP-Exam_Prep\Lesson08Example\Lesson08Example\obj\Debug\Lesson08Example.csproj.AssemblyReference.cache
+D:\Coding Projects\IT3A-OOP-Exam_Prep\Lesson08Example\Lesson08Example\obj\Debug\Lesson08Example.csproj.SuggestedBindingRedirects.cache
+D:\Coding Projects\IT3A-OOP-Exam_Prep\Lesson08Example\Lesson08Example\obj\Debug\Lesson08Example.csproj.CoreCompileInputs.cache
+D:\Coding Projects\IT3A-OOP-Exam_Prep\Lesson08Example\Lesson08Example\obj\Debug\Lesson08Example.exe
+D:\Coding Projects\IT3A-OOP-Exam_Prep\Lesson08Example\Lesson08Example\obj\Debug\Lesson08Example.pdb
