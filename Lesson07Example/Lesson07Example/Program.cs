@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,37 +6,39 @@ using System.Threading.Tasks;
 
 namespace Lesson07Example
 {
-    class School //base class
+    class School
     {
         public string strSchoolName;
-        private string strAddress; //private is a default, even if we're not mentioned
+        private string strAddress;
+
         public string Address
         {
-            get {return strAddress;}
-            set {  strAddress = value; }
+            get{ return strAddress; }
         }
+
         public School(string strSchoolName, string strAddress)
         {
             this.strSchoolName = strSchoolName;
             this.strAddress = strAddress;
-            
         }
     }
-    class Student : School //part d, //derive class
+    
+    class Student : School
     {
         public string strStudentName;
         private float fltSchoolFees;
 
         public float SchoolFees
         {
-            get { return fltSchoolFees; }
+            get{ return fltSchoolFees; }
             set { fltSchoolFees = value; }
         }
-        public Student(string strStudentName, float fltSchoolFees, string strSchoolName, string strAddress): base(strSchoolName, strAddress)//4 variables, 2 from school
-        { 
-            this.strStudentName=strStudentName;
-            this.fltSchoolFees = fltSchoolFees;
-            //SchoolFees = fltSchoolFees;
+
+        public Student(string strStudentName, string Address, string strStudentName, float SchoolFees)
+            :base (strStudentName, Address)
+        {
+            this.strStudentName = strStudentName;
+            this.SchoolFees = SchoolFees;
         }
     }
     internal class Program
@@ -44,21 +46,19 @@ namespace Lesson07Example
         static void Main(string[] args)
         {
             Student objS1;
-            Console.Write("Enter the school: ");
-            string mySchool = Console.ReadLine();
-            Console.Write("Enter the address: ");
-            string myAddress = Console.ReadLine();
-            Console.Write("Enter the name of the student:");
-            string myName = Console.ReadLine();
-            Console.Write("Enter the school fee: ");
-            float mySchoolFees = float.Parse(Console.ReadLine());
 
+            Console.Write("Enter the school name: ");
+            string schoolname = Console.ReadLine();
+            Console.Write("Enter the school address: ");
+            string address = Console.ReadLine();
+            Console.Write("Enter the student name: ");
+            string studentname = Console.ReadLine();
+            Console.Write("Enter the school fees: ");
+            float fees = float.Parse(Console.ReadLine());
 
-            objS1 = new Student(myName, mySchoolFees, mySchool, myAddress);
-            Console.WriteLine("School name: {0}", objS1.strSchoolName);
-            Console.WriteLine("Address: {0}", objS1.Address);
-            Console.WriteLine("Student Name: {0}", objS1.strStudentName);
-            Console.WriteLine("School Fees: {0}", objS1.SchoolFees);
+            objS1 = new Student(schoolname, address, studentname, fees);
+
+            Console.WriteLine("School name: " + objS1.strSchoolName + "\nSchool Address: " + objS1.Address + "\nStudent Name: " + objS1.strStudentName + "\nSchool fees" + objS1.SchoolFees);
         }
     }
 }
